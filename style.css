@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: right;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+
+ul li a.active {
+  background-color: #54028a;
+}
+
+ul li a:hover {
+  background-color: #7102a5;
+}
+
+/* Header Styles */
+header {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Section Styles */
+section h2, section p {
+  margin: 5px;
+  padding: 0;
+  text-align: center;
+}
+
+#downloadButton {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #54028a;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  transition-duration: 0.25s;
+}
+
+#downloadButton:hover {
+  background-color: #9900e0; 
+}
