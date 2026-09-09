@@ -19,6 +19,8 @@ ul {
   background-color: #333333;
   display: flex;
   justify-content: right;
+  position: fixed;
+  width: 100%;
 }
 
 ul li a {
@@ -54,6 +56,7 @@ section h2, section p {
   text-align: center;
 }
 
+/* Button Styles */
 #downloadButton {
   display: block;
   margin: 10px auto;
@@ -70,40 +73,68 @@ section h2, section p {
   background-color: #9900e0; 
 }
 
-/* Intro Paragraph Styles */
-.textImage {
+/* Text Image Styles */
+.textImageGroup {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 20px 10px;
   color: white;
-  background-color: #555555;
+  background-color: #000000;
 }
-.textImage article {
+
+.textImageGroup.reverse {
+  flex-direction: row-reverse;
+}
+
+.textImageGroup article {
   display: block;
   max-width: 35%;
   margin: 0 auto;
   text-align: center;
 }
 
-#protoImage {
+.textImageGroup img {
   display: block;
   margin: 0 auto;
   max-width: 60%;
   border-radius: 20px;
 }
 
+/* Q1  Styles */
+#q1 {
+  background-color: #555555;
+}
+
+/* Q2 Styles */
+#q2 {
+  background-color: #666666;
+}
+
+/* Q3 Styles */
+#q3 {
+  background-color: #777777;
+}
+
+/* Download Section Styles */
+#downloadSection {
+  background-color: #888888;
+  color: white;
+  padding: 20px 10px;
+}
+
 /* Media Query for Phone Screens */
 @media (max-width: 670px) {
-  .textImage {
+  .textImageGroup,
+  .textImageGroup.reverse {
     flex-direction: column;
   }
 
-  .textImage article {
+  .textImageGroup article {
     max-width: 90%;
   }
 
-  #protoImage {
+  .textImageGroup img {
     max-width: 80%;
   }
 }
