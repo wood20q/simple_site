@@ -6,7 +6,7 @@ This is a simple, one page site for a class assignment. This project is based of
 
 ### HTML:
 
-1. At least 5 different semetic HTML elements
+1. At least 5 different semantic HTML elements
 1. At least one image with proper alt text
 1. At least one form element
 1. At least 3 distinct sections of content
@@ -14,7 +14,7 @@ This is a simple, one page site for a class assignment. This project is based of
 ### CSS:
 
 1. At least 10 CSS rulesets
-1. Use of classs and IDs to target specific elements
+1. Use of classes and IDs to target specific elements
 1. At least one media query to make your site responsive
 1. Thoughtful color scheme, spacing and typography
 
