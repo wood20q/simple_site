@@ -4,13 +4,6 @@ body {
   padding: 0;
 }
 
-hr {
-  margin: 0;
-  height: 4px;
-  background-color: #000000;
-  border: none;
-}
-
 /* Logo Style */
 .logo.top {
   position: absolute;
