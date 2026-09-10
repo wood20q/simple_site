@@ -237,6 +237,15 @@ footer {
   font-size: 30px;
 }
 
+.socialLink:link,
+.socialLink:visited {
+  color: white;
+}
+
+.socialLink:hover {
+  color: #54028a;
+}
+
 /* Media Query for Phone Screens */
 @media (max-width: 670px) {
   .textImageGroup,
