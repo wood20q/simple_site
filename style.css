@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -63,6 +67,16 @@ section h2, section p {
   text-align: center;
 }
 
+/* Link Styling */
+a:link,
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #54028a;
+}
+
 /* Button Styles */
 .button {
   display: block;
@@ -108,26 +122,31 @@ section h2, section p {
   border-radius: 20px;
 }
 
+/* Download Section Styles */
+#download {
+  background-color: #555555;
+  color: white;
+  padding: 20px 10px;
+}
+
+#download #downloadLinks {
+  display: flex;
+  justify-content: center;
+}
+
 /* Q1  Styles */
 #q1 {
-  background-color: #555555;
+  background-color: #606060;
 }
 
 /* Q2 Styles */
 #q2 {
-  background-color: #606060;
+  background-color: #656565;
 }
 
 /* Q3 Styles */
 #q3 {
-  background-color: #656565;
-}
-
-/* Download Section Styles */
-#download {
   background-color: #707070;
-  color: white;
-  padding: 20px 10px;
 }
 
 /* Contact Styles */
@@ -228,15 +247,6 @@ footer {
 #socials i {
   display: inline-block;
   font-size: 30px;
-}
-
-.socialLink:link,
-.socialLink:visited {
-  color: white;
-}
-
-.socialLink:hover {
-  color: #54028a;
 }
 
 /* Media Query for Phone Screens */
