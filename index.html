@@ -4,17 +4,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>simple site</title>
       <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav>
       <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="">Downloads</a></li>
-        <li><a href="">Contact</a></li>
+        <img style="float:left" class="logo top" src="svg/logo.svg" alt="Logo for the Course Scheduler"/>
+        <li><a  href="#home">Home</a></li>
+        <li><a href="#download">Downloads</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <header>
+      <header id="home">
         <h1>Course Scheduler</h1>
       </header>
       <section class="textImageGroup" id="q1">
@@ -38,20 +40,29 @@
         </article>
         <img id="protoImage" src="Images/prototype.png" alt="visual representation of the Course Scheduler"/>
       </section>
-      <section id="downloadSection">
+      <section id="download">
         <h2>Download Course Scheduler Today</h2>
-        <button id="downloadButton">Download Now</button>
+        <button class="button"id="downloadButton">Download Now</button>
         <p>This is section 2</p>
       </section>
-      <hr>
-      <section id="section3">
-        <h2>Contact Me</h2>
-        <p>This is section 3</p>
+      <section id="contact">
+        <form class="form" id="contactForm">
+          <h2>Contact Me</h2>
+          <input type="text" id="nameInput" placeholder="Name"/>
+          <input type="email" id="emailInput" placeholder="Email"/>
+          <textarea id="messageInput" placeholder="Message"></textarea>
+          <button class="button" id="submitButton" type="submit">Submit</button>
+          <div id="formMessage">Place Holder text</div>
+        </form>
       </section>
     </main>
     <hr>
     <footer>
-      <p>This is an amazing website</p>
+      <img class="logo bottom" src="svg/logo-white.svg" alt="White scale version of the logo">
+      <div id="socials">
+        <p>Socials</p>
+        <i class="fa fa-github"></i>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .primary { fill: #1a5276; }
+      .accent { fill: #f39c12; }
+      .grid-line { stroke: #d6eaf8; stroke-width: 4; }
+      .clock-stroke { stroke: #1a5276; stroke-width: 12; fill: #ffffff; }
+      .hand { stroke: #1a5276; stroke-width: 8; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Orange Swoosh Arrows -->
+  <path d="M 90 220 A 130 130 0 0 1 150 70" fill="none" stroke="#f39c12" stroke-width="16" stroke-linecap="round"/>
+  <polygon points="140,55 165,70 140,85" class="accent"/>
+  
+  <path d="M 310 160 A 130 130 0 0 1 250 310" fill="none" stroke="#f39c12" stroke-width="16" stroke-linecap="round"/>
+  <polygon points="260,325 235,310 260,295" class="accent"/>
+
+  <!-- Graduation Cap Base -->
+  <polygon points="200,80 90,125 200,170 310,125" class="primary"/>
+  <path d="M 130,145 L 130,200 Q 200,240 270,200 L 270,145 Z" class="primary"/>
+  
+  <!-- Tassel -->
+  <line x1="200" y1="125" x2="110" y2="180" stroke="#f39c12" stroke-width="4"/>
+  <circle cx="110" cy="180" r="8" class="accent"/>
+  <polygon points="105,185 115,185 120,220 100,220" class="accent"/>
+
+  <!-- Clock and Calendar -->
+  <circle cx="210" cy="210" r="75" class="clock-stroke"/>
+  
+  <!-- Calendar Grid -->
+  <line x1="175" y1="145" x2="175" y2="275" class="grid-line"/>
+  <line x1="210" y1="135" x2="210" y2="285" class="grid-line"/>
+  <line x1="245" y1="145" x2="245" y2="275" class="grid-line"/>
+  <line x1="145" y1="175" x2="275" y2="175" class="grid-line"/>
+  <line x1="135" y1="210" x2="285" y2="210" class="grid-line"/>
+  <line x1="145" y1="245" x2="275" y2="245" class="grid-line"/>
+
+  <!-- Clock Hands -->
+  <circle cx="210" cy="210" r="8" class="primary"/>
+  <line x1="210" y1="210" x2="210" y2="165" class="hand"/>
+  <line x1="210" y1="210" x2="240" y2="225" class="hand"/>
+
+  <!-- Typography -->
+  <text x="50%" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1a5276" text-anchor="middle" letter-spacing="1">COURSE SCHEDULER</text>
+</svg>

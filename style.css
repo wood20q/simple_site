@@ -11,6 +11,19 @@ hr {
   border: none;
 }
 
+/* Logo Style */
+.logo.top {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  height: 75px;
+  margin: 0 0 10px 0;
+}
+
+.logo.bottom {
+  height: 75px;
+}
+
 /* Navigation Styles */
 ul {
   list-style-type: none;
@@ -18,9 +31,15 @@ ul {
   padding: 0;
   background-color: #333333;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   position: fixed;
   width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+}
+
+ul li {
+  margin: auto 0;
 }
 
 ul li a {
@@ -32,11 +51,6 @@ ul li a {
   transition-duration: 0.3s;
 }
 
-
-ul li a.active {
-  background-color: #54028a;
-}
-
 ul li a:hover {
   background-color: #7102a5;
 }
@@ -45,7 +59,7 @@ ul li a:hover {
 header {
   background-color: #444444;
   color: white;
-  padding: 100px 0;
+  padding: 190px 0 100px 0;
   text-align: center;
 }
 
@@ -57,7 +71,7 @@ section h2, section p {
 }
 
 /* Button Styles */
-#downloadButton {
+.button {
   display: block;
   margin: 10px auto;
   padding: 10px 20px;
@@ -69,7 +83,7 @@ section h2, section p {
   transition-duration: 0.25s;
 }
 
-#downloadButton:hover {
+.button:hover {
   background-color: #9900e0; 
 }
 
@@ -108,19 +122,119 @@ section h2, section p {
 
 /* Q2 Styles */
 #q2 {
-  background-color: #666666;
+  background-color: #606060;
 }
 
 /* Q3 Styles */
 #q3 {
-  background-color: #777777;
+  background-color: #656565;
 }
 
 /* Download Section Styles */
-#downloadSection {
-  background-color: #888888;
+#download {
+  background-color: #707070;
   color: white;
   padding: 20px 10px;
+}
+
+/* Contact Styles */
+#contact {
+  background-color: #757575;
+  color: white;
+  padding: 20px 10px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.form h2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form input, .form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border: 4px solid #54028a;
+  border-radius: 15px;
+  background-color: #888888;
+  color: white;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #cccccc;
+}
+
+.form input:focus, .form textarea:focus {
+  outline: none;
+  border-color: #9900e0;
+}
+
+.form input[type="text"] {
+  width: 48%;
+  margin-right: 2%;
+}
+
+.form input[type="email"] {
+  width: 48%;
+  margin-left: 2%;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+}
+
+#submitButton {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.form #formMessage {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #54028a;
+  color: white;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  background-color: #808080;
+  color: white;
+  padding: 10px 20px;
+}
+
+#socials {
+  flex: 1;
+  margin: auto 0 auto auto;
+  padding: 0;
+  text-align: right;
+}
+
+#socials p {
+  margin-bottom: 5px;
+}
+
+#socials i {
+  display: inline-block;
+  font-size: 30px;
 }
 
 /* Media Query for Phone Screens */
@@ -136,5 +250,11 @@ section h2, section p {
 
   .textImageGroup img {
     max-width: 80%;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"] {
+    width: 100%;
+    margin: 0 0 15px 0;
   }
 }
